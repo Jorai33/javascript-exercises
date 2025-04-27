@@ -1,9 +1,5 @@
 const reverseString = function (message) {
-  let output = "";
-
-  for (let i = 1; i <= message.length; i++) {
-    output += message[message.length - i];
-  }
+  let output = message.split("").reverse().join("");
 
   return output;
 };
